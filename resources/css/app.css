@@ -1,11 +1,23 @@
 @import 'tailwindcss';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+    --color-brand: #5a3a1f;
+    --color-brand-dark: #3b2412;
+    --color-cream: #fbf6f1;
+    --color-sand: #f4ebe3;
+    --color-leaf: #3f6149;
 }
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white font-sans text-brand-dark antialiased; }
+.eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.2em] text-leaf; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition; }
+.btn-primary { @apply bg-brand text-white hover:bg-brand-dark; }
+.btn-ghost { @apply border border-brand/20 bg-white hover:bg-sand; }
+.card { @apply rounded-2xl border border-brand/10 bg-white shadow-sm; }
