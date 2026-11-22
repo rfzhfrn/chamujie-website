@@ -4,6 +4,11 @@
 return [
     'wa_number' => '6287754167157', // GANTI dengan nomor WhatsApp admin Chamujie (format 62...)
     'instagram' => 'https://instagram.com/chamujie',
+    'po' => [
+        'status' => 'available', // available | limited | full
+        'title'  => 'Open PO — Sabtu, 29 Nov',
+        'note'   => 'Pesanan diproses maksimal 2 hari setelah konfirmasi.',
+    ],
     'sizes' => [
         ['id' => '250ml', 'label' => '250ml', 'note' => '1 Personal Serving', 'price' => 18000],
         ['id' => '500ml', 'label' => '500ml', 'note' => '2 Generous Servings', 'price' => 30000],

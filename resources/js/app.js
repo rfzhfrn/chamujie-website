@@ -109,3 +109,24 @@ $$('#loc-tabs [data-tab]').forEach((b) => b.addEventListener('click', () => {
 }));
 
 renderCart();
+/* ---------- Navbar: menu mobile & penanda section aktif ---------- */
+const menuBtn = $('#menu-toggle');
+const mobileMenu = $('#mobile-menu');
+const setMenu = (open) => {
+    mobileMenu.classList.toggle('hidden', !open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.textContent = open ? '✕' : '☰';
+};
+menuBtn?.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+$$('#mobile-menu a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => e.matches && setMenu(false));
+
+const navLinks = $$('[data-nav]');
+const spy = new IntersectionObserver((entries) => entries.forEach((en) => {
+    if (!en.isIntersecting) return;
+    navLinks.forEach((l) => {
+        const on = l.getAttribute('href') === '#' + en.target.id;
+        ['font-bold', 'underline', 'underline-offset-4'].forEach((c) => l.classList.toggle(c, on));
+    });
+}), { rootMargin: '-45% 0px -50% 0px' });
+['menu', 'about', 'how', 'locations'].forEach((id) => { const el = document.getElementById(id); if (el) spy.observe(el); });
