@@ -3,7 +3,10 @@
 // Data sementara (statis). Nanti diganti pembacaan Google Sheets via App\Services\SheetService.
 return [
     'wa_number' => '6287754167157', // GANTI dengan nomor WhatsApp admin Chamujie (format 62...)
-    'instagram' => 'https://instagram.com/chamujie',
+    'socials' => [
+        'instagram' => 'https://instagram.com/chamujie',
+        'threads'   => 'https://www.threads.net/@chamujie',
+],
     'po' => [
         'status' => 'available', // available | limited | full
         'title'  => 'Open PO — Sabtu, 29 Nov',

@@ -45,7 +45,7 @@
             <img src="{{ asset('images/hero.jpg') }}" alt="Botol Chamujie Roasted Milk Tea" width="599" height="900" fetchpriority="high" class="h-64 w-full rounded-3xl object-cover shadow-xl md:h-80">
             <div class="mt-3 grid grid-cols-3 gap-3">
                 @foreach ($cfg['products'] as $p)
-                    <button data-open-product="{{ $p['id'] }}" class="card p-1.5 text-left">
+                    <button data-open-product="{{ $p['id'] }}" @disabled(($p['available'] ?? true) === false) class="card p-1.5 text-left disabled:opacity-50">
                         <img src="{{ asset($p['image']) }}" alt="{{ $p['name'] }}" loading="lazy" class="h-16 w-full rounded-lg object-cover">
                         <b class="mt-1 block truncate font-serif text-[10px]">{{ $p['name'] }}</b>
                         <small class="text-[10px]">Rp {{ number_format($p['price'], 0, ',', '.') }}</small>
