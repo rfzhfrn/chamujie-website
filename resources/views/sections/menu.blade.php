@@ -25,7 +25,7 @@
                 @php($avail = ($p['available'] ?? true) !== false)
                 <article data-category="{{ $p['category'] ?? 'Menu' }}" class="card flex flex-col overflow-hidden">
                     <button data-open-product="{{ $p['id'] }}" @disabled(! $avail) class="relative block w-full" aria-label="Lihat detail {{ $p['name'] }}">
-                        <img src="{{ asset($p['image']) }}" alt="{{ $p['name'] }}" loading="lazy" class="h-44 w-full object-cover {{ $avail ? '' : 'grayscale' }}">
+                        <img src="{{ asset($p['image']) }}" alt="{{ $p['name'] }}" loading="lazy" width="960" height="720" style="aspect-ratio: 4 / 3" class="block w-full object-cover {{ $avail ? '' : 'grayscale' }}">
                         @if (! empty($p['badge']))
                             <span class="absolute left-3 top-3 rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold text-white">{{ $badgeIcon[$p['badge']] ?? '⭐' }} {{ $p['badge'] }}</span>
                         @endif

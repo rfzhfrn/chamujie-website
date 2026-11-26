@@ -18,11 +18,11 @@ return [
         ['id' => '1L', 'label' => '1L', 'note' => '4–5 Servings', 'price' => 60000],
     ],
     'products' => [
-        ['id' => 'roasted', 'name' => 'Royal Roasted Milk Tea', 'price' => 18000, 'badge' => 'Best Seller', 'image' => 'images/roasted.jpg',
+        ['id' => 'roasted', 'name' => 'Royal Roasted Milk Tea', 'price' => 18000, 'badge' => 'Best Seller', 'image' => 'images/menu-royal-roasted-milk-tea.jpg',
          'desc' => 'Racikan andalan dari daun teh hitam dan oolong yang dipanggang perlahan, diseduh dengan susu segar lembut serta sentuhan karamel gula aren.'],
-        ['id' => 'green', 'name' => 'Royal Green Tea', 'price' => 18000, 'badge' => 'Best Seller', 'image' => 'images/green.jpg',
+        ['id' => 'green', 'name' => 'Royal Green Tea', 'price' => 18000, 'badge' => 'Best Seller', 'image' => 'images/menu-royal-green-tea.jpg',
          'desc' => 'Teh hijau panggang yang segar dengan susu creamy dan aroma herbal yang lembut.'],
-        ['id' => 'chathai', 'name' => 'Royal Cha Thai', 'price' => 18000, 'badge' => null, 'image' => 'images/chathai.jpg',
+        ['id' => 'chathai', 'name' => 'Royal Cha Thai', 'price' => 18000, 'badge' => null, 'image' => 'images/menu-royal-cha-thai.jpg',
          'desc' => 'Thai tea khas dengan rasa rempah hangat dan susu segar yang creamy.'],
     ],
     'stores' => [

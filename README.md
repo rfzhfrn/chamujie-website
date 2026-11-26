@@ -1,59 +1,172 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/images/logo.jpg" alt="Logo Chamujie" width="120">
 </p>
 
-## About Laravel
+<h1 align="center">Chamujie Website</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  Website katalog &amp; pemesanan <b>Chamujie Artisanal Roasted Milk Tea</b>, UMKM minuman teh panggang homemade dari Malang.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <img alt="Laravel 12" src="https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white">
+  <img alt="PHP 8.2+" src="https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white">
+  <img alt="Tailwind CSS 4" src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white">
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white">
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Tentang Chamujie
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Chamujie memproduksi **roasted milk tea** dalam botol 250 ml, 500 ml, dan 1 L. Daun teh dipanggang perlahan lalu diseduh bersama susu segar, dibuat sesuai pesanan (*made-to-order*) dan diproses maksimal 2 hari.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Menu | Deskripsi singkat |
+|---|---|
+| **Royal Roasted Milk Tea** | Teh hitam dan oolong panggang, susu segar, sentuhan karamel gula aren |
+| **Royal Green Tea** | Teh hijau panggang yang segar dengan susu creamy |
+| **Royal Cha Thai** | Thai tea dengan rasa rempah hangat dan susu segar |
 
-## Laravel Sponsors
+<p align="center">
+  <img src="public/images/menu-royal-roasted-milk-tea.jpg" alt="Royal Roasted Milk Tea" width="260">
+  <img src="public/images/menu-royal-green-tea.jpg" alt="Royal Green Tea" width="260">
+  <img src="public/images/menu-royal-cha-thai.jpg" alt="Royal Cha Thai" width="260">
+</p>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Chamujie dijual lewat dua jalur:
 
-### Premium Partners
+- **Online:** promosi di Instagram, TikTok, dan Threads, lalu pemesanan lewat WhatsApp.
+- **Offline:** titip jual (konsinyasi) di toko mitra dan booth bazaar atau Car Free Day.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Latar Belakang Proyek
 
-## Contributing
+Proyek ini dikerjakan untuk mata kuliah **Manajemen Proyek Tangkas (MPT A), Kelompok 08**, Departemen Sistem Informasi.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Dari wawancara dengan mitra, masalah utama Chamujie adalah produknya **belum banyak dikenal**, sehingga penjualan masih sedikit. Pemilik juga mengerjakan produksi dan pemasaran sendiri. Website ini dibuat untuk:
 
-## Code of Conduct
+1. Memperkenalkan produk beserta keunggulannya (rasa dan harga yang bersaing).
+2. Menyediakan katalog digital dengan pemesanan yang rapi ke WhatsApp.
+3. Menampilkan toko mitra konsinyasi serta jadwal event dan bazaar.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Fitur
 
-## Security Vulnerabilities
+| Section | Fitur |
+|---|---|
+| **Navbar** | Navigasi antar-section, penanda section aktif, menu hamburger di HP, tombol keranjang |
+| **Hero** | Headline, tombol *Pesan Sekarang* dan *Cek Event Terdekat*, status slot Pre-Order (*Available / Limited / Fully Booked*) |
+| **How to Order** | Alur pemesanan 4 langkah, info proses PO, pengiriman, dan opsi beli langsung |
+| **Catalog Menu** | Kartu produk dengan badge (*Best Seller, Limited Batch, New Release*), filter kategori, status *Habis* |
+| **Detail Menu (modal)** | Pilihan ukuran botol, tingkat gula 0–100%, catatan khusus, jumlah, total otomatis |
+| **Cart** | Keranjang sementara, form nama dan metode (Delivery / Self-Pickup), preview pesan WhatsApp, Copy Text |
+| **WhatsApp** | Satu klik mengirim format pesanan yang rapi ke WhatsApp admin (*click-to-chat* `wa.me`) |
+| **Stores &amp; Bazaar** | Tab toko mitra dan event, tautan Google Maps, event yang sudah lewat tersembunyi otomatis |
+| **Footer** | Identitas brand dan tautan Instagram serta Threads |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Rencana pengembangan
 
-## License
+- [ ] Data produk, stok, toko, event, dan slot PO dibaca dari **Google Sheets**, supaya pemilik cukup mengubah isi sheet tanpa menyentuh kode.
+- [ ] Keranjang tersimpan saat halaman di-refresh.
+- [ ] Peta digital tertanam untuk lokasi toko dan event.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Teknologi
+
+- [Laravel 12](https://laravel.com) dengan Blade
+- [Tailwind CSS 4](https://tailwindcss.com) dan [Vite](https://vitejs.dev)
+- JavaScript tanpa framework
+- SQLite (bawaan Laravel; data website saat ini belum memakai database)
+
+## Menjalankan di Komputer Sendiri
+
+### Prasyarat
+
+- PHP **8.2** atau lebih baru, dengan ekstensi `zip`, `fileinfo`, `mbstring`, `openssl`, `curl`, `pdo_sqlite`, `sqlite3`
+- [Composer](https://getcomposer.org) 2.x
+- [Node.js](https://nodejs.org) versi LTS (sudah termasuk `npm` dan `npx`)
+- Git
+
+### Instalasi
+
+```bash
+git clone https://github.com/<username>/chamujie-website.git
+cd chamujie-website
+
+composer install
+npm install
+
+cp .env.example .env        # Windows: copy .env.example .env
+php artisan key:generate
+```
+
+### Menjalankan (mode pengembangan)
+
+Buka **dua terminal** dan biarkan keduanya berjalan:
+
+```bash
+# Terminal 1
+php artisan serve
+
+# Terminal 2
+npm run dev
+```
+
+Buka `http://127.0.0.1:8000`.
+
+### Atau build sekali
+
+```bash
+npm run build
+php artisan serve
+```
+
+Jalankan `npm run build` lagi setiap kali tampilan atau JavaScript diubah.
+
+### Catatan untuk Windows
+
+- **`composer run dev` berhenti dengan error Pail** (`The [pcntl] extension is required`). Pail tidak bisa berjalan di Windows. Pakai cara dua terminal di atas.
+- **`npm` diblokir PowerShell** (`running scripts is disabled`). Jalankan sekali:
+  ```powershell
+  Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+  ```
+  atau pakai Command Prompt.
+- **Tampilan polos tanpa gaya** dan konsol berisi `ERR_CONNECTION_REFUSED` ke port `5173`. Vite tidak sedang berjalan tetapi file `public/hot` masih ada. Hapus file itu, lalu jalankan `npm run build` atau `npm run dev`.
+
+## Mengubah Data Website
+
+Semua data yang tampil di website ada di **`config/chamujie.php`**:
+
+| Kunci | Isi |
+|---|---|
+| `wa_number` | Nomor WhatsApp admin, format `62...` |
+| `products` | Nama, kategori, deskripsi, badge, gambar, dan ketersediaan menu |
+| `sizes` | Ukuran botol dan harganya |
+| `po` | Status dan jadwal slot Pre-Order |
+| `stores` | Toko mitra konsinyasi |
+| `bazaars` | Jadwal event dan bazaar (`date` dengan format `YYYY-MM-DD`) |
+| `socials` | Tautan Instagram dan Threads |
+
+Gambar produk disimpan di `public/images/`.
+
+## Struktur Folder Utama
+
+```
+config/chamujie.php              data website
+routes/web.php                   route halaman utama
+resources/
+├── css/app.css                  tema warna dan font (Tailwind)
+├── js/app.js                    modal, keranjang, WhatsApp, navbar, filter
+└── views/
+    ├── layouts/app.blade.php    head, navbar, footer
+    ├── home.blade.php           susunan section
+    └── sections/                hero, menu, about, how, locations, cart
+public/images/                   logo dan foto produk
+```
+
+## Kontak Chamujie
+
+- Instagram: [@chamujie](https://instagram.com/chamujie)
+- Threads: [@chamujie](https://www.threads.com/@chamujie)
+- TikTok: [@chamujie](https://www.tiktok.com/@chamujie)
+
+---
+
+<sub>Dibuat untuk keperluan akademik mata kuliah Manajemen Proyek Tangkas. Logo, foto produk, dan merek Chamujie adalah milik Chamujie.</sub>
